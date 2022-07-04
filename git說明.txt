@@ -8,4 +8,4 @@ git使用方法
 二、把要上傳的檔案或資料夾複製或是丟到抓下來的資料夾裡面
 1. git add .
 2. git commit -m "留言(一定要輸入)"
-3. git push 
+3. git push (push前最好再git pull 一次)
