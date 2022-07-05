@@ -1,6 +1,6 @@
 <?php
 
-require("../db-connect2.php");
+require("../../db-connect2.php");
 
 $name=$_GET["name"];
 

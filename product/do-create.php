@@ -1,6 +1,6 @@
 <?php
 
-require("../db-connect2.php");//串聯修改
+require("../../db-connect2.php");//串聯修改
 
 $name=$_POST["name"];
 $description=$_POST["description"];

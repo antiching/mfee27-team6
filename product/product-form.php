@@ -1,5 +1,5 @@
 <?php
-require("../db-connect2.php");//串聯修改
+require("../../db-connect2.php");//串聯修改
 
 //後端required檢查(未完成)
 // 可能可以寫成模組再用require的方式執行?

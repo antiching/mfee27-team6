@@ -1,6 +1,6 @@
 <?php
 $id=$_GET["id"];
-require("../db-connect2.php");
+require("../../db-connect2.php");
 
 
 $sql="SELECT * FROM product";
