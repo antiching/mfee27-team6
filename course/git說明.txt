@@ -1,0 +1,11 @@
+測試測試
+
+git使用方法
+
+一、先把github上的檔案夾抓下來
+1.找到或建一個資料夾 ex.test資料夾 或單純找個地方?
+2.在終端機輸入 git clone [github上檔案的網址]-
+二、把要上傳的檔案或資料夾複製或是丟到抓下來的資料夾裡面
+1. git add .
+2. git commit -m "留言(一定要輸入)"
+3. git push (push前最好再git pull 一次)
