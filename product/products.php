@@ -1,10 +1,25 @@
 <?php
 require("../db-connect2.php");//串聯修改a
 
-$sql="SELECT * FROM product";
+$sqlCategory="SELECT * FROM category";
+$resultCategory=$conn->query($sqlCategory);
+$rowsCategory=$resultCategory->fetch_all(MYSQLI_ASSOC);
 
+if (isset($_GET["category"])){
+  $category = $_GET["category"];
+  $sqlWhere="WHERE product.category_id=$category";
+  echo "good";
+}else{
+  $category="";
+  $sqlWhere="";
+  echo "error";
+}
+
+$sql="SELECT * FROM product";
 $result=$conn->query($sql);
 $rows=$result->fetch_all(MYSQLI_ASSOC);
+
+
 
 ?>
 
