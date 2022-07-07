@@ -1,9 +1,13 @@
 <?php
+if(!isset($_GET["id"])){
+    echo "沒有參數";
+    exit;
+}
 $id=$_GET["id"];
 require("../../db-connect2.php");
 
 
-$sql="SELECT * FROM product";
+$sql="SELECT * FROM product WHERE id=$id";
 $result=$conn->query($sql);
 $productCount=$result->num_rows;
 

@@ -1,11 +1,17 @@
 <?php
-$id=$_GET["id"];
+
+
+$id=$_POST["id"];
 require("../../db-connect2.php");
 
 
 $sql="SELECT * FROM product";
 $result=$conn->query($sql);
 $productCount=$result->num_rows;
+
+$sqlHide="UPDATE product SET status =0 WHERE id='$id'";
+$resultHide=$conn->query($sqlHide);
+// $rowHide=$resultHide->fetch_assoc();
 
 
 

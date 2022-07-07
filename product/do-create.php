@@ -12,7 +12,7 @@ $discontinue_time=$_POST["discontinue_time"];
 $stock_in_inventory=$_POST["stock_in_inventory"];
 $status=$_POST["status"];
 
-$sql="INSERT INTO `product`( `name`, `description`, `price`, `image`, `category_id`, `launch_time`, `discontinue_time`, `stock_in _inventory`, `status`) VALUES ('$name','$description','$price','$image','$category_id','$launch_time','$discontinue_time','$stock_in_inventory','$status')";
+$sql="INSERT INTO `product`( `name`, `description`, `price`, `image`, `category_id`, `launch_time`, `discontinue_time`, `stock_in_inventory`, `status`) VALUES ('$name','$description','$price','$image','$category_id','$launch_time','$discontinue_time','$stock_in_inventory','$status')";
 
 if($conn->query($sql) === TRUE){
     echo "success!";
@@ -22,6 +22,6 @@ if($conn->query($sql) === TRUE){
 
 $conn->close();
 
-header("location:product-list.php");
+header("location:products.php");
 
 ?>

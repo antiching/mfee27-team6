@@ -64,11 +64,19 @@ if(empty($_POST["name"])){
                 <label for="">商品上下架狀態</label>
                 <div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="status" id="" value="1">
+                        <input class="form-check-input" type="radio" name="status" id="" value="1"
+                        <?php  
+                        if()
+                        
+                        ?>>>
                         <label class="form-check-label" for="">上架</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="status" id="" value="2" checked>
+                        <input class="form-check-input" type="radio" name="status" id="" value="0" 
+                        <?php  
+                        if()
+                        
+                        ?>>
                         <label class="form-check-label" for="">下架</label>
                     </div>
                     <!-- 用timestamp控制checked -->
